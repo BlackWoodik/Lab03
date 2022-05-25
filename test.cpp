@@ -39,8 +39,8 @@ test_empty() {
     double min = 0;
     double max = 0;
     find_minmax({}, min, max);
-    assert(min == 1);
-    assert(max == 3);
+    assert(min == 0);
+    assert(max == 0);
 }
 
 int
@@ -50,4 +50,5 @@ main() {
     test_same();
     test_solo();
     test_empty();
+    return (0);
 }
